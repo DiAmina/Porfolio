@@ -1,22 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 10px;
+        }
+        .skill {
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #f7f7f7, #fff);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: black;
+            width: calc(40% - 40px);
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            color: #0b519b;
+            text-align: center;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 20px auto;
+            background: #7c4dff;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background: #6633cc;
+        }
+
+        h3 {
+            text-align: center;
+            color: #0b519b;
+        }
+
+
+    </style>
+   
 <head>
     <meta charset="UTF-8">
-    <title>Compétence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compétences</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">Amina MADI</div>
+        <div class="logo">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\LogAmi.png" alt="Logo">
+        </div>
         <nav>
             <a href="accueil.html">Accueil</a>
-            <a href="etudes.html">Etudes</a>
-            <a href="competence.html">Projects</a>
+            <a href="projets.html">Projets</a>
+            <a href="competences.html">Compétences</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+    <main>
+        <h1>Compétences</h1>
+        <p> </p>
+        <div class="skills">
+            <div class="skill">
+                <h3>Réaliser</h3>
+                <p>Développer — c’est-à-dire concevoir, coder, tester
+                    et intégrer — une solution informatique pour un
+                    client.</p>
+                <a href ="projetRealiser.html" class="button">Voir plus</a>
+            </div>
+            <div class="skill">
+                <h3>Optimiser</h3>
+                <p>Proposer des applications informatiques
+                    optimisées en fonction de critères spécifiques :
+                    temps d’exécution, précision, consommation de
+                    ressource</p>
+                <a href="projetOptimiser.html" class="button">Voir plus</a>
+            </div>
+            <div class="skill">
+                <h3>Administrer</h3>
+                <p>Installer, configurer, mettre à disposition,
+                    maintenir en conditions opérationnelles des
+                    infrastructures, des services et des réseaux et
+                    optimiser le système informatique d’une
+                    organisation</p>
+                <a href ="projetAdministrer.html" class="button">Voir plus</a>
+            </div>
+            <div class="skill">
+                <h3>Gérer</h3>
+                <p>Concevoir, gérer, administrer et exploiter les
+                    données de l’entreprise et mettre à disposition
+                    toutes les informations pour un bon pilotage de
+                    l’entreprise</p>
+                <a href="projetGerer.html" class="button">Voir plus</a>
+            </div>
+            <div class="skill">
+                <h3>Conduire</h3>
+                <p>Satisfaire les besoins des utilisateurs au regard
+                    de la chaîne de valeur du client, organiser et
+                    piloter un projet informatique avec des méthodes
+                    classiques ou agiles</p>
+                <a href="projetConduire.html" class="button">Voir plus</a>
+            </div>
+            <div class="skill">
+                <h3>Collaborer</h3>
+                <p>Acquérir, développer et exploiter les aptitudes
+                    nécessaires pour travailler efficacement dans une
+                    équipe informatique</p>
+                <a href="projetCollaborer.html" class="button">Voir plus</a>
+            </div>
+        </div>
+    </main>
 
 </body>
-
 </html>
