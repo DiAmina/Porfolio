@@ -1,5 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+    <style>
+        .container {
+           display: flex;
+           justify-content: space-between;
+           width: 80%;
+           margin: auto;
+        }
+        
+        .right-column {
+           width: 45%;
+           padding: 20px;
+        }
+        
+        .skills-list {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+        }
+        
+        .skill {
+            border-radius: 5px;
+            color: rgb(245, 248, 248);
+        
+        }
+        .skill {
+            width: calc(20% - 20px); /* 25% de l'espace avec une marge de 20px */
+            margin: 10px;
+            padding: 20px;
+            background: #dd5d18;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -8px;
+
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <title>Accueil</title>
@@ -7,25 +44,45 @@
 </head>
 <body>
     <header>
-        <div class="logo">Amina MADI</div>
+        <div class="logo">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\LogAmi.png" alt="Logo">
+        </div>
         <nav>
             <a href="accueil.html">Accueil</a>
-            <a href="etude.html">Etudes</a>
-            <a href="competence.html">Compétences</a>
+            <a href="projets.html">Projets</a>
+            <a href="competences.html">Compétences</a>
             <a href="contact.html">Contact</a>
         </nav>
       </header>
 </head>
    <main>
-      <h1>Amina MADI</h1>
-      <p>A Frontend focused Web Developer building the Frontend of Websites and Applications that leads to the success of the overall product</p>
-      <a href="#" class="cta">Projects</a>
+    <div class="titre">
+        Amina MADI | Étudiante en Data 
+    </div>
+    <div class="content">
+        <p>En 3éme année de BUT informatique à l'IUT Paul Sabatier<br>  En parcours administrateur, gestion et exploitation de données <br>
+         Je vous aide à comrendre les données pour mieux les exploiter ! 
+         </p>
+    </div>
+    <div class="right-column">
+        <div class="skills-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">GIT</div>
+            <div class="skill">Github</div>
+             <div class="skill">Bootstrap</div>
+             <div class="skill">Python</div>
+             <div class="skill">Flask</div>
+             <div class="skill">SQL</div>
+             <div class="skill">MongoDB</div>
+             <div class="skill">Power BI</div>
+        </div>
+    </div>
    </main>
-   <video src="C:\Users\Etudiant\Documents\BUT-S5\cv\CvVideoMadiAmina_D.mp4" controls></video>
-   
-
+   <video controls autoplay loop>
+        <source src="C:\Users\Madi\Documents\BUT\S6\Porfolio\Porfolio\ressourse\CvVideoMadiAmina_D.mp4" type="video/mp4">
+   </video>
 </body>
-<footer>
-   <p>&copy; 2024 Amina MADI</p>
-</footer>
 </html>
