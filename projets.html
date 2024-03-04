@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Projets</title>
+    <style>
+        .project {
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #f7f7f7, #fff);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project:nth-child(even) {
+            flex-direction: row-reverse; /* Inversion de l'ordre pour les projets pairs */
+        }
+
+        .project img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project:hover img{
+            transform: scale(1.1);
+        }
+
+        .project h3, .project h5 {
+            margin: 0;
+        }
+
+        .right-column {
+            width: 45%;
+            padding: 20px;
+        }
+
+        .skills-list {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background: #dd5d18;
+            border-radius: 5px;
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .skill:hover {
+            background: #ff7f0e;
+            color: black;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .project img.fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: 9999;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\LogAmi.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="competences.html">Compétences</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Mes projets universitaire</h1>
+        <br>
+        <div class="project">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 1">
+            <div class="right-column">
+                <h3>Vente de fromage</h3>
+                <h5>Site internet de vente de fromage passant de la librairie, le panier, et la facture</h5>
+                <div class="skills-list">
+                    <div class="skill">JAVA</div>
+                    <div class="skill">WindowsBuilder</div>
+                    <div class="skill">Modelio</div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 2">
+            <div class="right-column">
+                <h3>Location de immeuble</h3>
+                <h5>Création d'un logiciel destiné à la gestion de bien immobilier, en passant de la saisi du bien, calcul des charges et saisi des locataires</h5>
+                <div class="skills-list">
+                    <div class="skill">JAVA</div>
+                    <div class="skill">MCD</div>
+                    <div class="skill">WindowsBuilder</div>
+                    <div class="skill">JDBC</div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 3">
+            <div class="right-column">
+                <h3>Visualisation de donnée médicale</h3>
+                <h5>Traitement d'article médicale, excel pour abtenir un logiciel de visualisation de donnée sécurisé stockée dans un base de donnée</h5>
+                <div class="skills-list">
+                    <div class="skill">PYTHON</div>
+                    <div class="skill">DJANGO</div>
+                    <div class="skill">MONGOBD</div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\recherche.png" alt="Project 4">
+            <div class="right-column">
+                <h3>Algorithme de recherche</h3>
+                <h5>Traitement de fichier de sous-titre des film .svt, .sbt afin de les utiliser pour faire des recherche via des mots clé tout cela sur une interface ne streaming tel Netflix </h5>
+                <div class="skills-list">
+                    <DIV class="skill">NLP</DIV>
+                    <div class="skill">PYTHON</div>
+                    <div class="skill">FLASK</div>
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <DIV class="skill">JAVASCRIPT</DIV>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\apexOracle.png" alt="Project 5">
+            <div class="right-column">
+                <h3>Visualisation avec OracleApex</h3>
+                <h5>SQL, Graphique, Création de user, de dashboard</h5>
+                <div class="skills-list">
+                    <div class="skill">SQL</div>
+                    <div class="skill">Graphique</div>
+                    <div class="skill">Admin</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 5">
+            <div class="right-column">
+                <h3>IA et Deep learning</h3>
+                <h5>Deep learning, machine learning, preprocessing</h5>
+                <div class="skills-list">
+                    <div class="skill">PYTHON</div>
+                    <div class="skill">CLASSIFICATION</div>
+                    <div class="skill">TENSORFLOW</div>
+                    <div class="skill">KERAS</div>
+                    <div class="skill">PANDAS</div>
+                    <div class="skill">MATPLOTLIB</div>
+            </div>
+        </div>
+        </div>
+        <div class="project">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 5">
+            <div class="right-column">
+                <h3>Chart JS</h3>
+                <h5>Des données sur la carriered'informaticiens dans le monde</h5>
+                <div class="skills-list">
+                    <div class="skill">Chart.js</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">Bootsrap</div>
+                    <div class="skill">jQuery</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        // JavaScript pour rendre l'image en plein écran lorsqu'elle est cliquée
+        const image = document.querySelector('.project img');
+        image.addEventListener('click', function() {
+            this.classList.toggle('fullscreen'); // Ajoute ou supprime la classe 'fullscreen'
+        });
+    </script>
+</body>
+</html>
