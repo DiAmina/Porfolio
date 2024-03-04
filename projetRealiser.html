@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <style>
+        .projet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .projet img {
+            width: 80%;
+            height: 65%;
+            margin-top: 100px;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s;
+
+        }
+        .description {
+            position: absolute;
+            top: 50%; /* Position au centre vertical de l'image */
+            left: 50%; /* Position au centre horizontal de l'image */
+            transform: translate(-50%, -50%); /* Centrage du texte */
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            opacity: 0; /* Cacher au départ */
+            transition: opacity 0.3s; /* Animation de transition */
+            z-index: 2; /* Assure que le texte soit au-dessus de l'image */
+            color: black;
+        }
+        .projet:hover .description {
+            opacity: 1; /* Afficher au survol */
+        }
+
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Collaborer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\LogAmi.png" alt="Logo">
+            </div>
+            <nav>
+                <a href="accueil.html">Accueil</a>
+                <a href="projets.html">Projets</a>
+                <a href="competences.html">Compétences</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <h3>Réaliser</h3>
+        <!--Mettre de grande photos cliquable pour presenter les projets-->
+        <div class="projet">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\Datawarehouse.png" alt="Projet1">
+            <div class="description">Out of the night that covers me,
+                Black as the pit from pole to pole,
+                I thank whatever gods may beFor my unconquerable soul.
+                In the fell clutch of circumstanceI have not winced nor cried aloud.
+                Under the bludgeonings of chance
+                My head is bloody, but unbowed.
+                Beyond this place of wrath and tears</div>
+            <h2>Projet 1</h2>
+        </div>
+        <div class="projet">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\Datawarehouse.png" alt="Projet2">
+            <div class="description">Looms but the Horror of the shade,
+                And yet the menace of the years
+                Finds and shall find me unafraid.
+                It matters not how strait the gate,
+                How charged with punishments the scroll,
+                I am the master of my fateI am the captain of my soul</div>
+            <h2>Projet 2</h2>
+        </div>
+    </body>
+</html>
