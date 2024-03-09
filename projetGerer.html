@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
     <style>
+        header {
+        position: fixed;
+        width: 100%;
+        z-index: 9999; /* Assure que le menu soit au-dessus de tout le reste */
+        }
+
+        h3{
+            /*le h3 dois etre en dessous du menu */
+            margin-top: 80px;
+
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrer horizontalement */
+            justify-content: center; /* Centrer verticalement */
+        }
+        h3, h4, h5 {
+            color: white;
+            font-family: Arial, sans-serif;
+            border-radius: 8px;
+            background-color: #df650e;
+            padding: 7px;
+            /* augmenter la taille de la police*/
+            font-size: 1.1em;
+
+        }
+        h4 {
+            margin-top: 10px;
+        }
+        h5 {
+            margin-top: 5px;
+        }
+
         .projet {
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
+        }
+        .photo {
+            margin-top: 0.5px;
+
         }
         .projet img {
             width: 80%;
@@ -51,29 +89,48 @@
                 <a href="projets.html">Projets</a>
                 <a href="competences.html">Compétences</a>
                 <a href="contact.html">Contact</a>
+                <a class="cv" href="CV.html" download>Download CV</a>
             </nav>
         </header>
         <h3>Gérer</h3>
-        <!--Mettre de grande photos cliquable pour presenter les projets-->
+            <h4>Administrer une base de données,
+                concevoir et réaliser des systèmes
+                d’informations décisionnels
+            </h4>
+                <br>
+            <h5>Capturer et stocker des données volumineux et complexes de données hétérogènes <br>
+                Préparer et extraire les données pour l’exploitation <br>
+                Appliquer des méthodes d’exploration et d’exploitation des données (apprentissage, informatique décisionnelle ou fouille de données)<br>
+                Mettre en production et optimiser le système de gestion de données de l’entreprise
+            </h5>
+            <div class="projet">
+                <img class="photo" src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\recherche.png" alt="Projet1">
+                <div class="description">
+                    Réaliser un site web vitrine pour les séries TV <br>
+                    À partir des fichiers de sous-titres de 128 séries,<br>
+                    Une fonction de recherche de séries à partir d'un ou plusieurs mots-clés<br>
+                    Une fonction de recommandation de séries.<br>
+                    Prétraitement des Données :<br>
+                    Nettoyages, Archivage, Chargement des Données<br>
+                    
+                    Analyse des Sous-Titres :<br>
+                    Langue Automatique, Vectorisation TF-IDF<br>
+                    
+                    Développement de l'Application :<br>
+                    Flask, Recherche par Mots-Clés, Affichage des Résultats, Base de Données, Affichage de Détails<br>
+                    Recommandation de séries<br>
+                </div>
+                <h2>Plateforme de recherche de série</h2>
+            </div>
+        </div>  
         <div class="projet">
-            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Projet1">
-            <div class="description">Out of the night that covers me,
-                Black as the pit from pole to pole,
-                I thank whatever gods may beFor my unconquerable soul.
-                In the fell clutch of circumstanceI have not winced nor cried aloud.
-                Under the bludgeonings of chance
-                My head is bloody, but unbowed.
-                Beyond this place of wrath and tears</div>
-            <h2>Projet 1</h2>
-        </div>
-        <div class="projet">
-            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Projet2">
-            <div class="description">Looms but the Horror of the shade,
-                And yet the menace of the years
-                Finds and shall find me unafraid.
-                It matters not how strait the gate,
-                How charged with punishments the scroll,
-                I am the master of my fateI am the captain of my soul</div>
+            <img class="photo" src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\Polarité.png" alt="Projet2">
+            <div class="description">Apprentissage automatique <br>
+                Sujet : Plateformes comme Amazon doivent évaluer la polarité des avis pour orienter leurs achats. <br>
+                L'objectif du projet est de prédire la polarité et le score des commentaires laissés <br> 
+                par les utilisateurs sur des livres. Ces commentaires sont associés à des informations des livres <br> 
+                telles que le titre, les auteurs, l'éditeur, etc. Le jeu de données se compose de deux fichiers <br>
+                Onexploite différentes représentations textuelles pour réaliser ces prédictions</div>
             <h2>Projet 2</h2>
         </div>
     </body>
