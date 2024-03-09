@@ -28,10 +28,11 @@
             width: 300px;
             height: auto;
             border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out; 
         }
         .project:hover img{
-            transform: scale(1.1);
+            transform: scale(1.2);
+            margin-right: 50px;
         }
 
         .project h3, .project h5 {
@@ -76,6 +77,13 @@
             object-fit: contain;
             z-index: 9999;
         }
+        .github{
+            text-decoration: none;
+            color: black;
+            background-color: #ff7f0e;
+            border-radius: 5px;
+
+        }
 
     </style>
 </head>
@@ -86,16 +94,34 @@
         </div>
         <nav>
             <a href="accueil.html">Accueil</a>
-            <a href="projets.html">Projets</a>
             <a href="competences.html">Compétences</a>
+            <a href="projets.html">Projets</a>
             <a href="contact.html">Contact</a>
+            <a class="cv" href="CV.html" download>Download CV</a>
         </nav>
     </header>
     <main>
         <h1>Mes projets universitaire</h1>
         <br>
         <div class="project">
-            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 1">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\CRUD.png" alt="Project 1">
+            <div class="right-column">
+                <h3>Gestion d'une équipe de sport</h3>
+                <h5>Projet: gestion d'une equipe de sport. L'entraîneur nous demande de réaliser une application qui <br>
+                    l'aidera à faire les sélections des joueurs pour les matchs
+                    Enregistrement des joueurs dans une base de données, modifie les information et supprimer un joueur</h5>
+                <div class="skills-list">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">PHP</div>
+                    <div class="skill">PHPMYADMIN</div>
+                    <div class="skill">CRUD</div>
+                </div>
+                <a class="github" href="https://github.com/DiAmina/Site-Gestion-Match-PHP-HTML-CSS/tree/main" class="button">Projet github</a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\panierCommmandeFromage.png" alt="Project 1">
             <div class="right-column">
                 <h3>Vente de fromage</h3>
                 <h5>Site internet de vente de fromage passant de la librairie, le panier, et la facture</h5>
@@ -104,10 +130,11 @@
                     <div class="skill">WindowsBuilder</div>
                     <div class="skill">Modelio</div>
                 </div>
+                <a class="github" href="https://github.com/DiAmina/Vente-de-fromage-JAVA" class="button">Projet maquette</a>
             </div>
         </div>
         <div class="project">
-            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 2">
+            <img src="C:\Users\Madi\Documents\Porfolio\ressourse\Acc.png" alt="Project 2">
             <div class="right-column">
                 <h3>Location de immeuble</h3>
                 <h5>Création d'un logiciel destiné à la gestion de bien immobilier, en passant de la saisi du bien, calcul des charges et saisi des locataires</h5>
@@ -117,10 +144,12 @@
                     <div class="skill">WindowsBuilder</div>
                     <div class="skill">JDBC</div>
                 </div>
+                <a class="github" href="https://www.figma.com/file/kY9npKX3qiryxdlDqEUxHG/Revolutech-team-library?type=design&node-id=0-1&mode=design" class="button">Projet maquette</a>
             </div>
         </div>
         <div class="project">
-            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 3">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\AcceuilClinique.png" alt="Project 3">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\nbMaladies.png" alt="Project 3">
             <div class="right-column">
                 <h3>Visualisation de donnée médicale</h3>
                 <h5>Traitement d'article médicale, excel pour abtenir un logiciel de visualisation de donnée sécurisé stockée dans un base de donnée</h5>
@@ -128,11 +157,15 @@
                     <div class="skill">PYTHON</div>
                     <div class="skill">DJANGO</div>
                     <div class="skill">MONGOBD</div>
+                    <div class="skill">Bootsrap</div>
                 </div>
+                <a class="github" href="https://github.com/Maxiwere45/TrialVisualizer" class="button">Projet github</a>
             </div>
         </div>
         <div class="project">
             <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\recherche.png" alt="Project 4">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\recommandation.png" alt="Video">
+            
             <div class="right-column">
                 <h3>Algorithme de recherche</h3>
                 <h5>Traitement de fichier de sous-titre des film .svt, .sbt afin de les utiliser pour faire des recherche via des mots clé tout cela sur une interface ne streaming tel Netflix </h5>
@@ -144,13 +177,14 @@
                     <div class="skill">CSS</div>
                     <DIV class="skill">JAVASCRIPT</DIV>
                 </div>
+                <a class="github" href="https://github.com/DiAmina/SearchSeries" class="button">Projet github</a>
             </div>
         </div>
         <div class="project">
             <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\apexOracle.png" alt="Project 5">
             <div class="right-column">
                 <h3>Visualisation avec OracleApex</h3>
-                <h5>SQL, Graphique, Création de user, de dashboard</h5>
+                <h5>SQL, Visualisation de données, Création de compte utilisateur, dashboard</h5>
                 <div class="skills-list">
                     <div class="skill">SQL</div>
                     <div class="skill">Graphique</div>
@@ -160,7 +194,8 @@
         </div>
 
         <div class="project">
-            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 5">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\PredictEtoile.png" alt="Project 5">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\Polarité.png" alt="Project 5">
             <div class="right-column">
                 <h3>IA et Deep learning</h3>
                 <h5>Deep learning, machine learning, preprocessing</h5>
@@ -171,11 +206,14 @@
                     <div class="skill">KERAS</div>
                     <div class="skill">PANDAS</div>
                     <div class="skill">MATPLOTLIB</div>
+                    <div class="skill">DeepLearning</div>
+                </div>
+                <a class="github" href="https://github.com/Maxiwere45/polarity-score-finder"  class="button">Projet github</a>
             </div>
         </div>
         </div>
         <div class="project">
-            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\teamwork.jpg" alt="Project 5">
+            <img src="C:\Users\Madi\Downloads\Porfolio2\Porfolio\Porfolio\ressourse\ChartJS2.png" alt="Project 5">
             <div class="right-column">
                 <h3>Chart JS</h3>
                 <h5>Des données sur la carriered'informaticiens dans le monde</h5>
@@ -186,7 +224,10 @@
                     <div class="skill">CSS</div>
                     <div class="skill">Bootsrap</div>
                     <div class="skill">jQuery</div>
+                    <div class="skill">AJAX</div>
                 </div>
+                <!--lien github du projet-->
+                <a class="github" href="https://github.com/DiAmina/StackOverCharts" class="button">Projet github</a>
             </div>
         </div>
 
